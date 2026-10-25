@@ -3,14 +3,9 @@
 ## Objective
 Using Kali Linux and Windows 10 virtual machines, we will see my steps for coordinating an MITM attack by doing ARP poisoning to change the MAC address, allowing us to intercept the packets. Once done, we will see how someone can steal credentials from someone who is on an unprotected site.
 
-### Skills Learned
-[Bullet Points - Remove this afterwards]
+##  What is ARP Poisoning?
+<img width="700" height="380" alt="image" src="https://github.com/user-attachments/assets/11b052f6-36d6-404f-b7c6-0fbc6faf95ed" />
 
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
 
 ### Tools Used
 [Bullet Points - Remove this afterwards]
