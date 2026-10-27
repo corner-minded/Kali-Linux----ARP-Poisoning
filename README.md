@@ -3,6 +3,13 @@
 ## Objective
 Using Kali Linux and Windows 10 virtual machines, we will see my steps for coordinating an MITM attack by doing ARP poisoning to change the MAC address, allowing us to intercept the packets. Once done, we will see how someone can steal credentials from someone who is on an unprotected site.
 
+### Tools Used
+[Bullet Points - Remove this afterwards]
+
+- Security Information and Event Management (SIEM) system for log ingestion and analysis.
+- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
+- Telemetry generation tools to create realistic network traffic and attack scenarios.
+
 ##  What is ARP Spoofing?
 <img width="700" height="380" alt="image" src="https://github.com/user-attachments/assets/11b052f6-36d6-404f-b7c6-0fbc6faf95ed" />
 
@@ -11,14 +18,7 @@ Before we explain what it is, we need to cover how two devices communicate on a 
 So, when using a computer that is on a network, when you try to access something on the internet, it looks for the router by calling out its IP address; the router will
 calls back, saying that's its IP and giving the MAC Address; then the computer stores the MAC Address and now knows where to communicate, but let's say an attacker is on the network.
 
-Then the attacker can be between both devices on the network by telling the victim's computer that it's the router, and that the attacker's MAC Address is the router's MAC Address, causing the victim to update the ARP cache and send data to the attacker, then forwards that data to the router; this is bad because if the data is not encrypted, the attacker can read the packets clearly.
-
-### Tools Used
-[Bullet Points - Remove this afterwards]
-
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+Then the attacker can be between both devices on the network by telling the victim's computer that it's the router and that the attacker's MAC Address is the router's MAC Address, causing the victim to update the ARP cache and send data to the attacker, then forwarding that data to the router; this is bad because if the data is not encrypted, the attacker can read the packets clearly.
 
 ## Steps
 drag & drop screenshots here or use imgur and reference them using imgsrc
