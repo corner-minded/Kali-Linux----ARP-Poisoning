@@ -4,11 +4,10 @@
 Using Kali Linux and Windows 10 virtual machines, we will see my steps for coordinating an MITM attack by doing ARP poisoning to change the MAC address, allowing us to intercept the packets. Once done, we will see how someone can steal credentials from someone who is on an unprotected site.
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+- Virtual Machine to have a safe environment to test the network attack.
+- Free and open-source network security tool for man-in-the-middle attacks on a LAN.
+- Packet sniffer to capture all encrypted and unencrypted traffic between the two devices.
 
 ##  What is ARP Spoofing?
 <img width="700" height="380" alt="image" src="https://github.com/user-attachments/assets/11b052f6-36d6-404f-b7c6-0fbc6faf95ed" />
