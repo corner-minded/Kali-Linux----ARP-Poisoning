@@ -20,10 +20,17 @@ calls back, saying that's its IP and giving the MAC Address; then the computer s
 Then the attacker can be between both devices on the network by telling the victim's computer that it's the router and that the attacker's MAC Address is the router's MAC Address, causing the victim to update the ARP cache and send data to the attacker, then forwarding that data to the router; this is bad because if the data is not encrypted, the attacker can read the packets clearly.
 
 ## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
 
-Every screenshot should have some text explaining what the screenshot is about.
+### Setting up
 
-Example below.
+``` sudo sysctl -w net.ipv4.ip_forward=1 ```
 
-*Ref 1: Network Diagram*
+Before we start, we need to use this command so our Kali can be capable of forwarding packets that are meant for other destinations (other than itself)
+
+<img width="1902" height="826" alt="image" src="https://github.com/user-attachments/assets/45e74c20-450c-4dbb-8b09-5e75de2890de" />
+
+```
+Kali: 192.168.1.30 
+Windows 10: 192.168.1.136
+```
+Here are shown, of course, the Kali and Windows IPs; we'll be using the Windows and Gateway's (router's) IPs to monitor their communications on the network. Now we will start setting up the attack using an open-source tool that comes with Kali.
