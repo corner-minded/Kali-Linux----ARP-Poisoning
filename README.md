@@ -1,7 +1,7 @@
 # Kali Linux: ARP Spoofing 
 
 ## Objective
-Using Kali Linux and Windows 10 virtual machines, we will see my steps for coordinating an MITM attack by doing ARP poisoning to change the MAC address, allowing us to intercept the packets. Once done, we will see how someone can steal credentials from someone who is on an unprotected site.
+Using Kali Linux and Windows 10 virtual machines, we will walk through the steps to coordinate an MITM attack using ARP poisoning to change the MAC address and intercept packets. Once done, we will see how someone can steal credentials from someone who is on an unprotected site.
 
 ### Tools Used
 
@@ -28,9 +28,21 @@ Then the attacker can be between both devices on the network by telling the vict
 Before we start, we need to use this command so our Kali can be capable of forwarding packets that are meant for other destinations (other than itself)
 
 <img width="1902" height="826" alt="image" src="https://github.com/user-attachments/assets/45e74c20-450c-4dbb-8b09-5e75de2890de" />
+<img width="607" height="72" alt="image" src="https://github.com/user-attachments/assets/e6b114df-ac25-4fa3-b0e0-e7352a143c3a" />
 
 ```
 Kali: 192.168.1.30 
 Windows 10: 192.168.1.136
+Router: 192.168.1.1
 ```
-Here are shown, of course, the Kali and Windows IPs; we'll be using the Windows and Gateway's (router's) IPs to monitor their communications on the network. Now we will start setting up the attack using an open-source tool that comes with Kali.
+Here are the Kali and Windows IPs; we'll use the Windows and gateway (router) IPs to monitor their communications on the network. Now we will start setting up the attack using an open-source tool that comes with Kali.
+
+### Ettercap
+
+<img width="805" height="462" alt="image" src="https://github.com/user-attachments/assets/c39c8900-5f20-43b0-bfdb-d0e931208022" />
+
+Ettercap is mainly used to perform MITM attacks on a network; this will allow us to tell the Windows computer to change the router's MAC address to Kali's. First, we will set the netmask to show all available hosts on the network; we can see this below.
+
+<img width="621" height="327" alt="image" src="https://github.com/user-attachments/assets/c9de42e8-b453-4e9e-b79c-392ce606d04c" />
+
+
