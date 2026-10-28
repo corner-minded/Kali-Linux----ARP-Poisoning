@@ -39,10 +39,18 @@ Here are the Kali and Windows IPs; we'll use the Windows and gateway (router) IP
 
 ### Ettercap
 
-<img width="805" height="462" alt="image" src="https://github.com/user-attachments/assets/c39c8900-5f20-43b0-bfdb-d0e931208022" />
-
-Ettercap is mainly used to perform MITM attacks on a network; this will allow us to tell the Windows computer to change the router's MAC address to Kali's. First, we will set the netmask to show all available hosts on the network; we can see this below.
-
 <img width="621" height="327" alt="image" src="https://github.com/user-attachments/assets/c9de42e8-b453-4e9e-b79c-392ce606d04c" />
 
+Ettercap is mainly used to perform MITM attacks on a network; this will allow us to tell the Windows computer to change the router's MAC address to Kali's. First, we will set the netmask to show all available hosts on the network; we can see this above.
 
+<img width="807" height="287" alt="image" src="https://github.com/user-attachments/assets/5e9ad0f1-8dfd-4227-a833-da73fdf64a2e" />
+
+Now, looking at the host list, we can see both Windows and the router's IPs (sometimes I see only one or none of the IPs I'm looking for, so I just go to the current target menu and add them myself). Once you're here, you want to select the router's IPs, then send it to target 1; do the same for the Windows IPs, but for target 2, allowing us to focus between the to host on the network.
+
+<img width="490" height="301" alt="image" src="https://github.com/user-attachments/assets/bf69fe5f-b02e-4463-9e5d-2cab2514df18" />
+
+<img width="637" height="132" alt="image" src="https://github.com/user-attachments/assets/45e60f6f-49dd-478f-9270-d5839c302275" />
+
+Finally, we can start ARP Spoofing.
+
+<img width="747" height="141" alt="image" src="https://github.com/user-attachments/assets/6fd75c82-87c2-4e5e-9558-09c84a442777" />
