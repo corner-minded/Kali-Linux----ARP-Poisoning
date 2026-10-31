@@ -61,7 +61,7 @@ We can see this by going into Windows 10 and running a command in Command Prompt
 
 We are going to use a popular free-to-use application that can help us: Wireshark. It is used for computer network analysis, software, and communications protocol development. Using this, we will be able to steal website credentials from Windows 10.
 
-<img width="1700" height="797" alt="image" src="https://github.com/user-attachments/assets/1832dd7f-b6a3-48ad-960e-4c8f1ac701e9" />
+<img width="1000" height="797" alt="image" src="https://github.com/user-attachments/assets/1832dd7f-b6a3-48ad-960e-4c8f1ac701e9" />
 
 <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/93eb8053-e864-4384-8ab4-7ddd7a886f31" />
 
