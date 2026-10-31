@@ -73,3 +73,6 @@ Since we are capturing packets between the Windows machine and the router, I am 
 
 <img width="1532" height="727" alt="image" src="https://github.com/user-attachments/assets/c6f97f20-1127-44cf-89ec-bbff7bf02b30" />
 
+Once we send out the login, we will quickly go to Wireshark and find the POST packet that has the username and password completely readable for everyone to see.
+
+
