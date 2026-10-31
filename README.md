@@ -57,6 +57,8 @@ Finally, we can start ARP Spoofing.
 
 We can see this by going into Windows 10 and running a command in Command Prompt to view all physical addresses. As shown above, the Kali and router's physical addresses are the same because Ettercap copied the router's physical address and told Windows 10 that the right place to forward the data is the Kali. Anyways, now we can start packet capturing.
 
+### Wireshark
+
 <img width="1872" height="875" alt="image" src="https://github.com/user-attachments/assets/3f36cf43-a6b6-45a8-9ecf-8322bfd1647b" />
 
 We are going to use a popular free-to-use application that can help us: Wireshark. It is used for computer network analysis, software, and communications protocol development. Using this, we will be able to steal website credentials from Windows 10.
@@ -68,3 +70,6 @@ We are going to use a popular free-to-use application that can help us: Wireshar
 We are going to use an unprotected website called Unicronitems.com. It claims to be a site where you can buy cute stuff and also claims to be affiliated with Amazon and is safe to buy here, even though it is using port 80 to run the site. There's no real proof behind the Amazon thing, so I just conclude it's a fake site.
 
 Since we are capturing packets between the Windows machine and the router, I am going to put fake credentials in the account section on the site. Since this site works on port 80, any packet sent through this site will be unencrypted, which means anyone can read the packets in clear text.
+
+<img width="1532" height="727" alt="image" src="https://github.com/user-attachments/assets/c6f97f20-1127-44cf-89ec-bbff7bf02b30" />
+
