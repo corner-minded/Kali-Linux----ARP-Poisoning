@@ -75,4 +75,6 @@ Since we are capturing packets between the Windows machine and the router, I am 
 
 Once we send out the login, we will quickly go to Wireshark and find the POST packet that has the username and password completely readable for everyone to see.
 
+**Conclusion
 
+From all of this, we learn how ARP spoofing works and what negatives can happen at any time when being on a public network or when someone has bad intentions in your own private network. To avoid this, it's best to use a trusted VPN on these types of sites, but sadly there are a lot more attacks someone can do on a network, even making a clone of another network. I will go into these and more in other projects.
